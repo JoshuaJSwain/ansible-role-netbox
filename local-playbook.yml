@@ -5,3 +5,5 @@
   become: true  # This is needed since NetBox installation requires root privileges
   roles:
     - { role: . }  # The dot indicates the current directory as the role
+  vars:
+    ansible_python_interpreter: /opt/netbox/venv/bin/python

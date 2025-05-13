@@ -30,6 +30,7 @@ __netbox_web_frontend_packages:
   - libapache2-mod-wsgi-py3
 
 netbox_python_binary: /usr/bin/python3.11
+ansible_python_interpreter: /opt/netbox/venv/bin/python
 
 netbox_postgresql_service: postgresql
 netbox_postgresql_user: postgres
