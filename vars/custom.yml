@@ -1,2 +1,3 @@
 ---
-netbox_virtualenv_path: "/root/.pyenv/versions/3.8.20/bin/python3.8"
+netbox_virtualenv_path: "/opt/netbox/venv"
+netbox_python_binary: "/root/.pyenv/versions/3.8.20/bin/python3.8"
