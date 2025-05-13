@@ -5,5 +5,7 @@
   become: true  # This is needed since NetBox installation requires root privileges
   vars:
     netbox_python_binary: /root/.pyenv/shims/python3.8
+    netbox_downloaded: 
+      changed: true  # Force reinstallation of requirements
   roles:
     - { role: . }  # The dot indicates the current directory as the role
