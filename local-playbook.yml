@@ -3,15 +3,5 @@
   hosts: localhost
   connection: local
   become: true  # This is needed since NetBox installation requires root privileges
-  vars:
-    netbox_python_binary: /root/.pyenv/shims/python3.8
-    netbox_downloaded:
-      changed: true  # Force reinstallation of requirements
-    ansible_python_interpreter: /root/.pyenv/shims/python3.8  # Use pyenv Python for Ansible itself
-  pre_tasks:
-    - name: Remove existing virtualenv
-      file:
-        path: /opt/netbox/venv
-        state: absent
   roles:
     - { role: . }  # The dot indicates the current directory as the role
