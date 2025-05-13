@@ -29,8 +29,7 @@ __netbox_web_frontend_packages:
   - apache2-utils
   - libapache2-mod-wsgi-py3
 
-netbox_python_binary: 
-ansible_python_interpreter: /root/.pyenv/versions/3.8.20/bin/python3.8
+netbox_python_binary: /usr/bin/python3.11
 
 netbox_postgresql_service: postgresql
 netbox_postgresql_user: postgres
