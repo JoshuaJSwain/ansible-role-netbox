@@ -3,5 +3,7 @@
   hosts: localhost
   connection: local
   become: true  # This is needed since NetBox installation requires root privileges
+  vars_files:
+    - vars/custom.yml
   roles:
     - { role: . }  # The dot indicates the current directory as the role
